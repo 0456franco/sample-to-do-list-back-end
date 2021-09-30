@@ -3,9 +3,6 @@
 namespace App\Observers;
 
 use App\Models\User;
-use App\Models\WebOptions;
-use App\Models\UserLocation;
-use App\Models\ContactMe;
 
 class UserObserver
 {
@@ -18,7 +15,7 @@ class UserObserver
     public function created(User $user)
     {
         //Create User Location
-        $userLocation = new UserLocation();
+        /*$userLocation = new UserLocation();
         $userLocation->createUserLocation($user);
 
         //Create User WebOptions
@@ -28,6 +25,7 @@ class UserObserver
         //Create user ContactMe Options
         $contactMe = new ContactMe();
         $contactMe->createContactMe($user);
+        */
     }
 
     /**
