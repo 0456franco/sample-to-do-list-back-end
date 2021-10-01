@@ -31,6 +31,7 @@ class ProjectFactory extends Factory
         $userId = User::inRandomOrder()->first()->id;
         return [
             'user_id' => $userId,
+            'uuid' => Str::uuid(),
             'name' => $projectName,
             'slug' => $slug,
         ];

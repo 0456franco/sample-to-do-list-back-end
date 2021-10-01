@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function getUserTasks(User $user, Request $request){
+    public function show(User $user, Request $request){
         
         return $user->getUserTasks($request);
 
